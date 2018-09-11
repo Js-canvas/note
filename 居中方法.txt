@@ -1,0 +1,119 @@
+水平方向上
+
+针对inline, 内联块inline-block, 内联表inline-table, inline-flex元素及img,span,button等元素
+.text_div{
+	text-align:center;
+}
+
+不定宽块状元素居中
+.text_div{
+    margin:0 auto;
+}
+
+通过给父元素设置 float，然后给父元素设置 position:relative 和 left:50%，子元素设置 position:relative 和 left: -50% 来实现水平居中。
+
+.wrap{
+
+    float:left;
+
+    position:relative;
+
+    left:50%;
+
+    clear:both;
+
+}
+
+.wrap-center{
+
+    left:-50%;
+
+}
+
+
+
+垂直居中
+
+单行内联(inline-)元素垂直居中 
+通过设置内联元素的高度(height)和行高(line-height)相等，从而使元素垂直居中。
+
+.text_div{
+    height: 120px;
+    line-height: 120px;
+}
+
+利用表布局
+.father {
+    display: table;
+}
+.children {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+flex布局
+.center-flex {
+    display: flex;
+    flex-direction: column;//上下排列
+    justify-content: center;
+}
+
+绝对布局方式
+已知高度
+
+.parent {
+
+  position: relative;
+
+}
+
+.child {
+
+  position: absolute;
+
+  top: 50%;
+
+  height: 100px;
+
+  margin-top: -50px;
+
+}
+
+
+未知高度
+
+.parent {
+
+    position: relative;
+
+}
+
+.child {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+}
+
+
+
+垂直水平居中根据上方结合
+
+flex方式
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+grid方式
+.parent {
+  height: 140px;
+  display: grid;
+}
+.child { 
+  margin: auto;
+}
+
