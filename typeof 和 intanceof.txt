@@ -1,0 +1,12 @@
+typeof 返回一个表示类型的字符串.
+instanceof 运算符用来检测 constructor.prototype 是否存在于参数 object 的原型链上.
+type         result
+Undefined   "undefined"
+Null        "object"
+Boolean     "boolean"
+Number      "number"
+String      "string"
+Symbol      "symbol"
+Host object Implementation-dependent
+Function    "function"
+Object      "object"

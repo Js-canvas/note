@@ -1,0 +1,13 @@
+1.number;
+
+2.string;
+
+3.boolean;
+
+4.undefined;
+
+5.null;
+
+6.symbol（ES6新增，文章后面有对着新类型的解释）Symbol 生成一个全局唯一的值。
+
+7.Object.（包括Object，Array，Function）
