@@ -22,7 +22,6 @@ console.log(uniq(aa));
 /*
 * 二、对象键值法去重
 * 速度最快， 占空间最多（空间换时间）
-*
 * 该方法执行的速度比其他任何方法都快， 就是占用的内存大一些。
 * 现思路：新建一js对象以及新数组，遍历传入数组时，判断值是否为js对象的键，
 * 不是的话给对象新增该键并放入新数组。
@@ -120,3 +119,13 @@ function uniq(array){
 
 var aa = [1,2,2,3,5,3,6,5];
 console.log(uniq(aa));
+
+/* 
+* ES6 Set
+* 我经过测试，目前主流的浏览器，Chrome,Firfox,Opera，Safari，包括微软的Edge,都是支持的，唯独IE系列不支持。
+*/
+let array = Array.from(new Set([1, 1, 1, 2, 3, 2, 4]));
+console.log(array);
+
+
+
