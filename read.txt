@@ -1,2 +1,3 @@
 test for use git (dev)
-master add this 
+master and dev add this
+
